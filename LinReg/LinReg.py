@@ -5,6 +5,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, r2_score
 
+# read dataset from csv file
+
 df = pd.read_csv(r'TvMarketing.csv')
 x = df.iloc[:, :-1].values
 y = df.iloc[:, 1].values
